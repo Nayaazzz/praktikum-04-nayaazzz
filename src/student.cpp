@@ -147,7 +147,7 @@ bool hapusHalaman(DNode*& head, DNode*& tail, int nomor) {
 
 // SOAL 4
 bool bukaTab(CNode*& head, int nomor) {
-     CNode* newNode = new CNode{nomor, nullptr};
+    CNode* newNode = new CNode{nomor, nullptr};
 
     if(head == nullptr){
         newNode->next = newNode;
@@ -157,7 +157,6 @@ bool bukaTab(CNode*& head, int nomor) {
         while(curr->next != head){
             curr = curr->next;
         }
-
         curr->next = newNode;
         newNode->next = head;
     }
